@@ -1,0 +1,3 @@
+This project made using the Spaceshipgame engine made by Kyle7273.
+
+Source code can be found here: https://github.com/kyle7273/spaceshipgame
