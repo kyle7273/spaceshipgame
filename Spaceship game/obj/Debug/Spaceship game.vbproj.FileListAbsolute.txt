@@ -1,2 +1,11 @@
 C:\Users\Kyle\AppData\Local\Temporary Projects\Spaceship game\bin\Debug\Spaceship game.exe.config
 C:\Users\Kyle\Documents\Visual Studio 2013\Projects\Spaceship game\Spaceship game\bin\Debug\Spaceship game.exe.config
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\Spaceship game\Spaceship game\bin\Debug\Spaceship game.exe
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\Spaceship game\Spaceship game\bin\Debug\Spaceship game.pdb
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\Spaceship game\Spaceship game\bin\Debug\Spaceship game.xml
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\Spaceship game\Spaceship game\obj\Debug\Spaceship_game.Form1.resources
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\Spaceship game\Spaceship game\obj\Debug\Spaceship_game.Resources.resources
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\Spaceship game\Spaceship game\obj\Debug\Spaceship game.vbproj.GenerateResource.Cache
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\Spaceship game\Spaceship game\obj\Debug\Spaceship game.exe
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\Spaceship game\Spaceship game\obj\Debug\Spaceship game.xml
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\Spaceship game\Spaceship game\obj\Debug\Spaceship game.pdb
