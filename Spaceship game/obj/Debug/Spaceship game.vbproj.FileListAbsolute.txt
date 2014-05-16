@@ -1,0 +1,2 @@
+C:\Users\Kyle\AppData\Local\Temporary Projects\Spaceship game\bin\Debug\Spaceship game.exe.config
+C:\Users\Kyle\Documents\Visual Studio 2013\Projects\Spaceship game\Spaceship game\bin\Debug\Spaceship game.exe.config
