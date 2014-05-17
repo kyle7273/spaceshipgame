@@ -1,40 +1,53 @@
 ﻿Public Class Form1
 
-    'FPS count
     Public newFPS As Integer
+    Public laser1Fired As Boolean
+    Public laser2Fired As Boolean
+    Public laser3Fired As Boolean
+    Public been2secondssincefire As Boolean
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Fix screen tearing and other render issues
         Me.DoubleBuffered = True
+        been2secondssincefire = True
     End Sub
 
-    'Declaring function GetAsyncKeyState
     Public Declare Function GetAsyncKeyState Lib "user32.dll" (ByVal vKey As Int32) As UShort
-
     Private Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Timer1.Tick
-        'Timer to get data
-
-        'If key pressed is up key
         If GetAsyncKeyState(Convert.ToInt32(Keys.Up)) Then
-            'Move player up 5 pixels
             Player.Top = Player.Top - 5
-            'Add 1 FPS to counter
             newFPS = newFPS + 1
         End If
-        'else check if key pressed is down
         If GetAsyncKeyState(Convert.ToInt32(Keys.Down)) Then
-            'Move player down 5 pixels
             Player.Top = Player.Top + 5
-            'Add 1 FPS to counter
             newFPS = newFPS + 1
         End If
-        'If the code reached this far without triggering something, eitheir the key will not be used or a key was never pressed.
+        If GetAsyncKeyState(Convert.ToInt32(Keys.Space)) Then
+                If laser1Fired = False Then
+                    laser1Fired = True
+                    laser.Top = Player.Top + 25
+                    laser.Left = Player.Left + 50
+                    laser.Visible = True
+                    newFPS = newFPS + 1
+                End If
+        End If
+        If laser.Visible = True Then
+            If laser.Left > 1300 Then
+                laser.Visible = False
+                laser1Fired = False
+            Else
+                laser.Left = laser.Left + 5
+                newFPS = newFPS + 1
+            End If
+        End If
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        'Display FPS for last round
         Label1.Text = "FPS: " & newFPS
-        'Reset FPS for this round.
         newFPS = 0
+    End Sub
+
+    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
+        Timer3.Enabled = False
+        been2secondssincefire = True
     End Sub
 End Class

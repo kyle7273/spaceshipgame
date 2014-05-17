@@ -27,7 +27,10 @@ Partial Class Form1
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.laser = New System.Windows.Forms.PictureBox()
+        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.Player, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.laser, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Player
@@ -60,6 +63,20 @@ Partial Class Form1
         Me.Timer2.Enabled = True
         Me.Timer2.Interval = 1000
         '
+        'laser
+        '
+        Me.laser.BackgroundImage = Global.Spaceship_game.My.Resources.Resources.laser
+        Me.laser.Location = New System.Drawing.Point(79, 18)
+        Me.laser.Name = "laser"
+        Me.laser.Size = New System.Drawing.Size(20, 4)
+        Me.laser.TabIndex = 2
+        Me.laser.TabStop = False
+        Me.laser.Visible = False
+        '
+        'Timer3
+        '
+        Me.Timer3.Interval = 2000
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -67,6 +84,7 @@ Partial Class Form1
         Me.BackgroundImage = Global.Spaceship_game.My.Resources.Resources.starfield006
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1264, 681)
+        Me.Controls.Add(Me.laser)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Player)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -74,6 +92,7 @@ Partial Class Form1
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Spaceship"
         CType(Me.Player, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.laser, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -82,5 +101,7 @@ Partial Class Form1
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Timer2 As System.Windows.Forms.Timer
+    Friend WithEvents laser As System.Windows.Forms.PictureBox
+    Friend WithEvents Timer3 As System.Windows.Forms.Timer
 
 End Class
